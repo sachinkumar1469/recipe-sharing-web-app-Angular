@@ -1,0 +1,9 @@
+<a href="#" class="list-group-item clearfix" (click)="handleClick()">
+    <div class="col-left">
+        <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+        <p class="list-grout-item-text">{{recipe.description}}</p>
+    </div>
+    <span class="pull-right">
+        <img [src]="recipe.imageUrl" class="img-responsive" style="max-height: 50px;" alt="">
+    </span>
+</a>

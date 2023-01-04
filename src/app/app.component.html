@@ -1,0 +1,11 @@
+<app-header (toggleRecipeEvent)="toggleRecipe($event)"></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-recipes *ngIf="isRecipe else setShopping"></app-recipes>
+            <ng-template #setShopping>
+                <app-shopping-list ></app-shopping-list>
+            </ng-template>
+        </div>
+    </div>
+</div>
