@@ -2,12 +2,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <app-recipes *ngIf="isRecipe else setShopping"></app-recipes>
+            <router-outlet></router-outlet>
+            <!-- <app-recipes *ngIf="isRecipe else setShopping"></app-recipes>
             <ng-template #setShopping>
                 <app-shopping-list ></app-shopping-list>
-            </ng-template>
-            <p appHighlight>Style me with custrom directives</p>
-            <p appBetterHighlight>Another appHighlight directive</p>
+            </ng-template> -->
+            <!-- <p appHighlight>Style me with custrom directives</p>
+            <p appBetterHighlight>Another appHighlight directive</p> -->
         </div>
     </div>
 </div>

@@ -5,8 +5,8 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a  (click)="toggle('recipe')">Recipe</a></li>
-                <li><a  (click)="toggle('shooping')">ShoppingList</a></li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/']" >Recipe</a></li>
+                <li routerLinkActive="active"><a  [routerLink]="['/shopping']" routerLinkActive="console.log(active)">ShoppingList</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li appDropdown class="dropdown ">

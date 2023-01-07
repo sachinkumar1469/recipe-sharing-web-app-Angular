@@ -1,4 +1,4 @@
-<a href="#" class="list-group-item clearfix" (click)="handleClick()">
+<a routerLinkActive="active" class="list-group-item clearfix" [routerLink]="['/',recipe.id]">
     <div class="col-left">
         <h4 class="list-group-item-heading">{{recipe.name}}</h4>
         <p class="list-grout-item-text">{{recipe.description}}</p>

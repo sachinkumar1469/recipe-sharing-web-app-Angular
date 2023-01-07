@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class RecipesComponent {
 
-  currSelectedRecipe = {};
-
-  handleRecipeListSelected(recipe){
-    this.currSelectedRecipe = {...recipe};
-  }
 }

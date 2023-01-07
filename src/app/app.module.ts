@@ -14,6 +14,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { HighLight } from './BasicHighlight/highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { AppRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
