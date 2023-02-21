@@ -1,40 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms'
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { Header } from './header/header.component';
-import { RecipesComponent } from './recipes/recipes.component';
-import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
-import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
-import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-import { HighLight } from './BasicHighlight/highlight.directive';
-import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
-import { DropdownDirective } from './shared/dropdown.directive';
-import { AppRoutes } from './app.routes';
+import {FormsModule} from '@angular/forms';
+import { AppComponent } from './app.component'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    Header,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent,
-    HighLight,
-    BetterHighlightDirective,
-    DropdownDirective
+  
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
-    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -42,6 +18,6 @@ import { AppRoutes } from './app.routes';
 export class AppModule { 
 
   constructor(){
-    console.log("Here in App Modult Constructor")
+    console.log("Here in App Module Constructor")
   }
 }

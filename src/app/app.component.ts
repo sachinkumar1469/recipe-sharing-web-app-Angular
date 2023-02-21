@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  isRecipe:boolean = true;
 
-  toggleRecipe(toSet:boolean){
-    console.log(toSet);
-    this.isRecipe = toSet;
-  }
 }
