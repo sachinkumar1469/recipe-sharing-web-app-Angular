@@ -7,7 +7,9 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.scss']
 })
 export class RecipeListComponent {
-  recipes:Recipe[] = [];
+  recipes:Recipe[] = [
+    new Recipe("Burger","Burger is made up of 'bun' and 'pototo","https://wallpapercave.com/wp/wp1929458.jpg")
+  ];
   constructor(){
 
   }
