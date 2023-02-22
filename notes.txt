@@ -1,0 +1,14 @@
+What is Decorators
+: Decorators are predefined function which is used to provide meta data for Class, Methods or Property. 
+: And frameworks can use that MetaData at runtime to configure the behaviour of Class, Methods or Property.
+: Ex: @Component @NgModule @Input @Output etc.
+
+What is Directives
+: Directives are instruction in the DOM.
+: In angular directives are the classes which is used to manipulate the behaviour of DOM Element.
+: Such as adding styles, respond to the user events and change the structure of DOM.
+: Attribute Directives => Are the directives which are generally used for changing the behaviour of an element.
+: => We can use directives as a attribute on any element. Ex: ngClass, ngModel, etc.
+: Structural Directives => Are used to change the structure of the DOM by adding or removing the element.
+: => For ex: *ngFor, *ngIf, etc.
+: We can create our own custom directives by using @Directives decorator.
