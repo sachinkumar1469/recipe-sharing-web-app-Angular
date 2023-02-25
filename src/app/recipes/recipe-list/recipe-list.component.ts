@@ -8,7 +8,8 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent {
   recipes:Recipe[] = [
-    new Recipe("Burger","Burger is made up of 'bun' and 'pototo","https://wallpapercave.com/wp/wp1929458.jpg")
+    new Recipe("Burger","Burger is made up of 'bun' and 'pototo","https://wallpapercave.com/wp/wp1929458.jpg"),
+    new Recipe("Burger","Burger is made up of 'bun' and 'pototo","https://wallpapercave.com/wp/wp1929458.jpg"),
   ];
   constructor(){
 
