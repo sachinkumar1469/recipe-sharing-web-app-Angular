@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
+  toShow:string = "recipes";
+  onCurrentActiveChange(event:string){
+    this.toShow = event;
+  }
 }
