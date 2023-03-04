@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Recipe } from '../recipe.model';
 
 @Component({
@@ -7,10 +7,8 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.scss']
 })
 export class RecipeListComponent {
-  recipes:Recipe[] = [
-    new Recipe("Burger","Burger is made up of 'bun' and 'pototo","https://wallpapercave.com/wp/wp1929458.jpg"),
-    new Recipe("Burger","Burger is made up of 'bun' and 'pototo","https://wallpapercave.com/wp/wp1929458.jpg"),
-  ];
+  
+  @Input() recipes:Recipe[];
   
   constructor(){
 
