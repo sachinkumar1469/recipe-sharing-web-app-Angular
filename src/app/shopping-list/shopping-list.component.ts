@@ -13,7 +13,7 @@ export class ShoppingListComponent {
     new Ingredient("Tomatos",10)
   ];
   onIngridentAdded(e:{name:string,amount:number}){
-    this.ingredients.push(e);
+    this.ingredients.push(new Ingredient(e.name,e.amount));
   }
   constructor(){}
 }
