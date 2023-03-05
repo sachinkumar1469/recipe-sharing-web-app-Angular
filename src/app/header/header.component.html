@@ -6,8 +6,17 @@
           </div>
           <ul class="nav navbar-nav">
             <!-- <li ><a href="#">Home</a></li> -->
-            <li [class.active]="currentActive == 'recipes'" #recipes (click)="onChangeNav('recipes')"><a href="#">Recipes</a></li>
-            <li [class.active]="currentActive == 'shopping'"><a href="#shopping" #shopping (click)="onChangeNav('shopping')">Shopping List</a></li>
+            <li
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact:true}"
+              #recipes>
+                <a routerLink="/">Recipes</a>
+            </li>
+            <li
+              routerLinkActive="active"
+              >
+                <a routerLink="/shopping" #shopping >Shopping List</a>
+            </li>
           </ul>
           <form class="navbar-form navbar-left" action="/action_page.php">
             <div class="form-group" [style]="{'margin-right':'10px'}">

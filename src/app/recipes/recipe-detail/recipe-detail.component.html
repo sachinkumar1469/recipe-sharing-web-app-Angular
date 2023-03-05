@@ -1,7 +1,7 @@
 <div *ngIf="selectedRecipe !== null; else noRecipe" class="row">
     <div class="row" >
         <div class="col-xs-12">
-            <img src="{{selectedRecipe.image}}"  class="img-responsive" style="max-height: 350px;" alt="">
+            <img src="{{selectedRecipe.image}}"  class="img-responsive" style="max-height: 350px; width: 100%;" alt="">
         </div>
     </div>
     <div class="row">
@@ -16,7 +16,7 @@
                         Manage Recipe <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">To Shopping List</a></li>
+                        <li><a (click)="onAddIngridents()" style="cursor: pointer;">To Shopping List</a></li>
                         <li><a href="#">Edit Recipie</a></li>
                         <li><a href="#">Delete Recipe</a></li>
                     </ul>
@@ -31,6 +31,13 @@
     <div class="row">
         <div class="col-xs-12">
             <p>Ingridents</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let ingrident of selectedRecipe.ingridents">{{ingrident.name}} ({{ingrident.amount}})</li>
+            </ul>
         </div>
     </div>
 </div>
