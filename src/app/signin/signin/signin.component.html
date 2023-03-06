@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="container">
+      <form class="form" action="" method="post">
+        <h2>Login</h2>
+        <label for="username"><b>Username</b></label>
+        <input type="text" [(ngModel)]="username" placeholder="Enter Username" name="username" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" [(ngModel)]="password" placeholder="Enter Password" name="password" required>
+        <input type="button" (click)="onSignIn()" value="Login">
+      </form>
+    </div>
+  </div>
+</div>

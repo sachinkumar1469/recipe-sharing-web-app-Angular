@@ -14,8 +14,11 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { SigninComponent } from './signin/signin/signin.component';
+import { FormsModule } from '@angular/forms';
 
 const routes:Routes =[
+  {path:"signin",component:SigninComponent},
   {path:"shopping",component:ShoppingListComponent},
   {path:"",component:RecipesComponent,children:[
     {path:":recipeId",component:RecipeDetailComponent},
@@ -32,12 +35,14 @@ const routes:Routes =[
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective
+    DropdownDirective,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]

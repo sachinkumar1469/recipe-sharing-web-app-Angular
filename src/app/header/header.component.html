@@ -7,8 +7,8 @@
           <ul class="nav navbar-nav">
             <!-- <li ><a href="#">Home</a></li> -->
             <li
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{exact:true}"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}"
               #recipes>
                 <a routerLink="/">Recipes</a>
             </li>
@@ -16,6 +16,10 @@
               routerLinkActive="active"
               >
                 <a routerLink="/shopping" #shopping >Shopping List</a>
+            </li>
+            <li
+              routerLinkActive="active">
+                <a routerLink="/signin">SignIn</a>
             </li>
           </ul>
           <form class="navbar-form navbar-left" action="/action_page.php">
